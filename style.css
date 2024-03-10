@@ -15,4 +15,13 @@ body > div#container-1, div#container-2 {
     margin: auto;
     max-width: 1200px;
     background-color: white;
+    padding: 10px;
+}
+
+body > div#container-1 > section#informacoes-pessoais {
+    display: flex;    
+}
+
+body > div#container-2 > section > ul > li {
+    list-style: inside;
 }
