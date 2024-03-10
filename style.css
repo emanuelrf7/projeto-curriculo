@@ -8,20 +8,45 @@
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 body > div#container-1, div#container-2 {
     display: block;
     margin: auto;
-    max-width: 1200px;
+    max-width: 700px;
     background-color: white;
     padding: 10px;
 }
 
 body > div#container-1 > section#informacoes-pessoais {
-    display: flex;    
+    display: flex;
+}
+
+body > div#container-1 > section#informacoes-pessoais > div#texto-informacoes-pessoais {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 1.25em;
+}
+
+body > div#container-1 > section#informacoes-pessoais > div#texto-informacoes-pessoais > p {
+    padding: 15px 0px;
 }
 
 body > div#container-2 > section > ul > li {
     list-style: inside;
+    padding: 8px;
+}
+
+body > div#container-2 > section > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    text-indent: 4px;
+    text-align: center;
 }
